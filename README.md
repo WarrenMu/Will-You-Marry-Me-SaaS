@@ -67,28 +67,6 @@ Then visit `http://127.0.0.1:8000/admin/`.
 ## Common commands (Windows PowerShell)
 Note: this repo’s README uses the venv-local Python at `.\.venv\Scripts\python`.
 
-### Setup
-```powershell
-python -m venv .venv
-.\.venv\Scripts\python -m pip install -r requirements.txt
-```
-
-### Database migrations
-```powershell
-.\.venv\Scripts\python manage.py migrate
-```
-
-### Run the dev server
-```powershell
-.\.venv\Scripts\python manage.py runserver
-```
-API base URL is `http://127.0.0.1:8000/api/`.
-
-### Run checks
-```powershell
-.\.venv\Scripts\python manage.py check
-```
-
 ### Tests
 This repo uses Django’s built-in test runner (no separate pytest/tox config is present).
 
